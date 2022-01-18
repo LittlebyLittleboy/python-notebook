@@ -1,0 +1,17 @@
+```html
+"""
+添加静态样式自定义界面：polls/static/polls/style.css
+"""
+li a {
+    color: green;
+}
+```
+
+```html
+"""
+加载静态文件添加样式：polls/templates/polls/index.html
+"""
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+```
